@@ -1,0 +1,9 @@
+Host default
+  HostName 192.168.121.166
+  User vagrant
+  Port 22
+  PasswordAuthentication no
+  IdentityFile /home/jrist/workspace/undercloud-vagrant/.vagrant/machines/default/libvirt/private_key
+  IdentitiesOnly yes
+  LogLevel FATAL
+
