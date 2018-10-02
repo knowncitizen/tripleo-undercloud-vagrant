@@ -15,11 +15,20 @@ You can run the vagrant ssh-config to get the relevant ssh-config info:
 ```
 vagrant ssh-config >> ~/.ssh/config
 ```
-And then once youv'e finished that, you can use sshuttle (which you can find [here](https://github.com/sshuttle/sshuttle)) and run something along the lines of:
+Edit the ~/.ssh/config to be the name 'undercloud'. Once you've finished that, you can use sshuttle (which you can find [here](https://github.com/sshuttle/sshuttle)) and run something along the lines of:
 ```
 sshuttle -vr undercloud 0/0
 ```
 You can then access the IP above in ~/.ssh/config as the starting point for the UI, or tie into it via a fork of [TripleO-UI](https://github.com/knowncitizen/tripleo-ui)
+
+Finally, you can do the following and have an undercloud:
+```
+openstack undercloud install
+```
+
+## Other Stuff
+
+The ssh-config is just an example.  It's easier to just generate it.
 
 ## Contributing
 
