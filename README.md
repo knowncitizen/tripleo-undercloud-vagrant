@@ -3,7 +3,7 @@ A Vagrantfile for quickly firing up a tripleo undercloud with latest repos.
 
 ## Pre-requisites
 
-You'll need [vagrant](https://github.com/hashicorp/vagrant) with the [vagrant-libvirt](https://github.com/vagrant-libvirt/vagrant-libvirt) plugin.
+You'll need [vagrant](https://github.com/hashicorp/vagrant) with the [vagrant-libvirt](https://github.com/vagrant-libvirt/vagrant-libvirt) plugin.  At the moment, this only works with Linux.  I'm working on the update for making it work with virtualbox.
 
 ## Usage
 
