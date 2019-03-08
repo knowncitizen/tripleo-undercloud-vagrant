@@ -1,9 +1,10 @@
 Vagrant.configure("2") do |config|
   config.vm.box = "centos/7"
+  config.vm.box_version = "1812.01"
   config.vm.network "private_network", ip: "192.168.121.166"
-  config.vm.provider :libvirt do |libvirt|
-    libvirt.cpus = 4
-    libvirt.memory = 8192
+  config.vm.provider :virtualbox do |virtualbox|
+    virtualbox.cpus = 2
+    virtualbox.memory = 8192
   end
   config.vm.provision "shell", inline: <<-SHELL
     echo "export TERM=xterm">>/home/vagrant/.bashrc
